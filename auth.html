@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Sign In / Register – RentMyThings</title>
+    <title>Sign In / Register â€“ RentMyThings</title>
     <meta name="description"
-        content="Join RentMyThings – create an account or sign in to start renting or listing items." />
-    <link rel="stylesheet" href="/styles/main.css" />
+        content="Join RentMyThings â€“ create an account or sign in to start renting or listing items." />
+    <link rel="stylesheet" href="styles/main.css" />
     <style>
         .auth-page {
             min-height: 100vh;
@@ -219,7 +219,7 @@
 
     <!-- Navbar (minimal) -->
     <nav class="navbar">
-        <a href="/index.html" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <rect width="28" height="28" rx="8" fill="rgba(0,201,167,0.15)" />
                 <path d="M7 14l5 5 9-9" stroke="#00c9a7" stroke-width="2.5" stroke-linecap="round"
@@ -229,7 +229,7 @@
             Rent<span class="logo-dot">My</span>Things
         </a>
         <div class="nav-actions">
-            <a href="/index.html" class="btn btn-ghost btn-sm">← Back to Browse</a>
+            <a href="index.html" class="btn btn-ghost btn-sm">â† Back to Browse</a>
         </div>
     </nav>
 
@@ -338,10 +338,10 @@
                     </button>
                     <div class="auth-divider">or try a demo account</div>
                     <button type="button" class="btn btn-ghost w-full" onclick="demoLogin()">
-                        🎭 Login as Demo User
+                        ðŸŽ­ Login as Demo User
                     </button>
                     <p class="auth-footer-text">Don't have an account? <a href="#"
-                            onclick="switchTab('register')">Create one →</a></p>
+                            onclick="switchTab('register')">Create one â†’</a></p>
                 </form>
 
                 <!-- Register Form -->
@@ -412,14 +412,14 @@
                         Create Account
                     </button>
                     <p class="auth-footer-text">Already have an account? <a href="#" onclick="switchTab('login')">Sign
-                            in →</a></p>
+                            in â†’</a></p>
                 </form>
             </div>
         </div>
     </main>
 
     <div id="toast-container"></div>
-    <script src="/js/utils.js"></script>
+    <script src="js/utils.js"></script>
     <script>
         // Redirect if already logged in
         if (Auth.isLoggedIn()) window.location.href = '/dashboard.html';
@@ -448,7 +448,7 @@
                 toast('Invalid email or password. Try demo@example.com / password', 'error');
                 return;
             }
-            btn.disabled = true; btn.textContent = 'Signing in…';
+            btn.disabled = true; btn.textContent = 'Signing inâ€¦';
 
             // Simulate slight delay
             setTimeout(() => {
@@ -473,12 +473,12 @@
             if (password !== confirm) { toast('Passwords do not match', 'error'); return; }
             if (MockDB.findUserByEmail(email)) { toast('Email already registered. Please sign in.', 'warning'); return; }
 
-            btn.disabled = true; btn.textContent = 'Creating account…';
+            btn.disabled = true; btn.textContent = 'Creating accountâ€¦';
             setTimeout(() => {
                 const user = MockDB.createUser({ name, email, password });
                 const { password: _, ...safeUser } = user;
                 Auth.save('mock_jwt_' + user._id, safeUser);
-                toast('Account created! Welcome to RentMyThings 🎉', 'success');
+                toast('Account created! Welcome to RentMyThings ðŸŽ‰', 'success');
                 setTimeout(() => { window.location.href = '/dashboard.html'; }, 1000);
             }, 700);
         }

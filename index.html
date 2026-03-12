@@ -1,15 +1,15 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>RentMyThings – Rent Anything from Your Neighbors</title>
+    <title>RentMyThings â€“ Rent Anything from Your Neighbors</title>
     <meta name="description"
         content="Peer-to-peer rental platform. Rent cameras, tools, camping gear and more from people near you. Save money, share resources, build community." />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <style>
-        /* ── Hero ────────────────────────────────── */
+        /* â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .hero {
             min-height: 92vh;
             display: flex;
@@ -201,7 +201,7 @@
             }
         }
 
-        /* ── Search Section ──────────────────────── */
+        /* â”€â”€ Search Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .search-section {
             position: relative;
             z-index: 2;
@@ -237,7 +237,7 @@
             min-width: 150px;
         }
 
-        /* ── Categories ──────────────────────────── */
+        /* â”€â”€ Categories â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .cat-grid {
             display: grid;
             grid-template-columns: repeat(8, 1fr);
@@ -274,7 +274,7 @@
             color: var(--text-secondary);
         }
 
-        /* ── How It Works ────────────────────────── */
+        /* â”€â”€ How It Works â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
         .how-card {
             padding: 2rem;
             text-align: center;
@@ -331,7 +331,7 @@
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <a href="/index.html" class="nav-logo" aria-label="RentMyThings Home">
+        <a href="index.html" class="nav-logo" aria-label="RentMyThings Home">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <rect width="28" height="28" rx="8" fill="rgba(0,201,167,0.15)" />
                 <path d="M7 14l5 5 9-9" stroke="#00c9a7" stroke-width="2.5" stroke-linecap="round"
@@ -342,13 +342,13 @@
         </a>
 
         <div class="nav-links">
-            <a href="/index.html" class="active">Browse</a>
-            <a href="/add-item.html">List an Item</a>
-            <a href="/dashboard.html">Dashboard</a>
+            <a href="index.html" class="active">Browse</a>
+            <a href="add-item.html">List an Item</a>
+            <a href="dashboard.html">Dashboard</a>
         </div>
 
         <div class="nav-actions">
-            <button class="nav-user-pill hidden" id="nav-user-pill" onclick="window.location.href='/dashboard.html'">
+            <button class="nav-user-pill hidden" id="nav-user-pill" onclick="window.location.href='dashboard.html'">
                 <div class="nav-avatar" id="nav-avatar"><span id="nav-avatar-initial">?</span></div>
                 <span id="nav-user-name">User</span>
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -357,7 +357,7 @@
             </button>
             <button class="btn btn-ghost btn-sm" id="nav-logout-btn" onclick="Auth.logout()"
                 style="display:none">Logout</button>
-            <a href="/auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">
+            <a href="auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4" />
                     <polyline points="10,17 15,12 10,7" />
@@ -373,15 +373,15 @@
 
     <!-- Mobile Menu -->
     <div class="mobile-menu hidden" id="mobile-menu">
-        <a href="/index.html">Browse Items</a>
-        <a href="/add-item.html">List an Item</a>
-        <a href="/dashboard.html">Dashboard</a>
+        <a href="index.html">Browse Items</a>
+        <a href="add-item.html">List an Item</a>
+        <a href="dashboard.html">Dashboard</a>
         <div style="height:1px;background:var(--border);margin:.5rem 0"></div>
-        <a href="/auth.html" id="mobile-login">Sign In / Register</a>
+        <a href="auth.html" id="mobile-login">Sign In / Register</a>
         <button id="mobile-logout" class="hidden" onclick="Auth.logout()">Logout</button>
     </div>
 
-    <!-- ── Hero ─────────────────────────────────────────────────── -->
+    <!-- â”€â”€ Hero â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-eyebrow">
@@ -393,7 +393,7 @@
             </div>
             <h1 class="hero-title">Rent <span class="grad">Anything</span> from People Near You</h1>
             <p class="hero-subtitle">Why buy when you can borrow? RentMyThings connects you with neighbors who have
-                tools, cameras, camping gear, and more—saving money and building community.</p>
+                tools, cameras, camping gear, and moreâ€”saving money and building community.</p>
             <div class="hero-actions">
                 <a href="#browse" class="btn btn-primary btn-lg">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -402,7 +402,7 @@
                     </svg>
                     Browse Items
                 </a>
-                <a href="/add-item.html" class="btn btn-outline btn-lg">
+                <a href="add-item.html" class="btn btn-outline btn-lg">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="12" y1="5" x2="12" y2="19" />
                         <line x1="5" y1="12" x2="19" y2="12" />
@@ -413,7 +413,7 @@
             <div class="hero-stats">
                 <div class="hero-stat"><strong>1,200+</strong><span>Items listed</span></div>
                 <div class="hero-stat"><strong>840+</strong><span>Happy renters</span></div>
-                <div class="hero-stat"><strong>4.8 ★</strong><span>Avg. rating</span></div>
+                <div class="hero-stat"><strong>4.8 â˜…</strong><span>Avg. rating</span></div>
             </div>
         </div>
 
@@ -421,54 +421,54 @@
         <div class="hero-visual">
             <div class="hero-visual-inner"></div>
             <div class="floating-card" style="background:rgba(14,19,32,.85)">
-                <span style="font-size:1.5rem">📸</span>
+                <span style="font-size:1.5rem">ðŸ“¸</span>
                 <div>
                     <div style="color:var(--text-primary);font-size:.82rem">Sony A7III</div>
-                    <div style="color:var(--primary)">₹800/day</div>
+                    <div style="color:var(--primary)">â‚¹800/day</div>
                 </div>
             </div>
             <div class="floating-card" style="background:rgba(14,19,32,.85)">
-                <span style="font-size:1.5rem">⛺</span>
+                <span style="font-size:1.5rem">â›º</span>
                 <div>
                     <div style="color:var(--text-primary);font-size:.82rem">Camping Tent</div>
-                    <div style="color:var(--primary)">₹350/day</div>
+                    <div style="color:var(--primary)">â‚¹350/day</div>
                 </div>
             </div>
             <div class="floating-card" style="background:rgba(14,19,32,.85)">
-                <span style="font-size:1.5rem">🚁</span>
+                <span style="font-size:1.5rem">ðŸš</span>
                 <div>
                     <div style="color:var(--text-primary);font-size:.82rem">DJI Drone</div>
-                    <div style="color:var(--primary)">₹1,200/day</div>
+                    <div style="color:var(--primary)">â‚¹1,200/day</div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- ── Search Section ───────────────────────────────────────── -->
+    <!-- â”€â”€ Search Section â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="search-section">
         <div class="search-wrapper">
-            <h3>🔍 Search for items to rent</h3>
+            <h3>ðŸ” Search for items to rent</h3>
             <div class="search-inputs">
-                <input type="text" class="form-input" id="kw-input" placeholder="What do you need? (camera, drill…)" />
+                <input type="text" class="form-input" id="kw-input" placeholder="What do you need? (camera, drillâ€¦)" />
                 <div class="divider-v" style="width:1px;background:var(--border)"></div>
                 <select class="form-select" id="cat-filter">
                     <option value="">All Categories</option>
-                    <option value="cameras">📸 Cameras</option>
-                    <option value="tools">🔧 Power Tools</option>
-                    <option value="camping">⛺ Camping Gear</option>
-                    <option value="electronics">🎮 Electronics</option>
-                    <option value="sports">🚴 Sports</option>
-                    <option value="music">🎸 Music</option>
-                    <option value="vehicles">🚗 Vehicles</option>
-                    <option value="kitchen">🍳 Kitchen</option>
+                    <option value="cameras">ðŸ“¸ Cameras</option>
+                    <option value="tools">ðŸ”§ Power Tools</option>
+                    <option value="camping">â›º Camping Gear</option>
+                    <option value="electronics">ðŸŽ® Electronics</option>
+                    <option value="sports">ðŸš´ Sports</option>
+                    <option value="music">ðŸŽ¸ Music</option>
+                    <option value="vehicles">ðŸš— Vehicles</option>
+                    <option value="kitchen">ðŸ³ Kitchen</option>
                 </select>
-                <input type="text" class="form-input" id="loc-input" placeholder="📍 City or area" />
+                <input type="text" class="form-input" id="loc-input" placeholder="ðŸ“ City or area" />
                 <button class="btn btn-primary" id="search-btn" onclick="doSearch()">Search</button>
             </div>
         </div>
     </section>
 
-    <!-- ── Categories ───────────────────────────────────────────── -->
+    <!-- â”€â”€ Categories â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="section-sm" id="categories">
         <div class="container">
             <div class="section-header" style="margin-bottom:1.75rem">
@@ -479,7 +479,7 @@
         </div>
     </section>
 
-    <!-- ── Browse Items ──────────────────────────────────────────── -->
+    <!-- â”€â”€ Browse Items â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="section" id="browse">
         <div class="container">
             <div class="section-header"
@@ -531,7 +531,7 @@
         </div>
     </section>
 
-    <!-- ── How It Works ──────────────────────────────────────────── -->
+    <!-- â”€â”€ How It Works â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="section"
         style="background:var(--bg-surface);border-top:1px solid var(--border);border-bottom:1px solid var(--border)">
         <div class="container">
@@ -546,19 +546,19 @@
                     <h3>Create Account</h3>
                     <p>Sign up in seconds. Set up your profile and verify your identity to build trust in the community.
                     </p>
-                    <span class="how-connector">→</span>
+                    <span class="how-connector">â†’</span>
                 </div>
                 <div class="card how-card">
                     <div class="how-num">2</div>
                     <h3>Find or List</h3>
                     <p>Search for items near you by category or location. Or list your own items and set your price.</p>
-                    <span class="how-connector">→</span>
+                    <span class="how-connector">â†’</span>
                 </div>
                 <div class="card how-card">
                     <div class="how-num">3</div>
                     <h3>Book & Confirm</h3>
                     <p>Send a rental request for your dates. The owner reviews and approves. You're all set!</p>
-                    <span class="how-connector">→</span>
+                    <span class="how-connector">â†’</span>
                 </div>
                 <div class="card how-card">
                     <div class="how-num">4</div>
@@ -569,7 +569,7 @@
         </div>
     </section>
 
-    <!-- ── CTA Banner ─────────────────────────────────────────────── -->
+    <!-- â”€â”€ CTA Banner â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <section class="section">
         <div class="container">
             <div class="card"
@@ -581,18 +581,18 @@
                         out?</span></h2>
                 <p class="section-sub" style="margin-bottom:2rem">Turn idle items into income. List your stuff and earn
                     money from your neighbors.</p>
-                <a href="/add-item.html" class="btn btn-secondary btn-lg">
+                <a href="add-item.html" class="btn btn-secondary btn-lg">
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                         <line x1="12" y1="5" x2="12" y2="19" />
                         <line x1="5" y1="12" x2="19" y2="12" />
                     </svg>
-                    Start Listing Now — It's Free
+                    Start Listing Now â€” It's Free
                 </a>
             </div>
         </div>
     </section>
 
-    <!-- ── Footer ─────────────────────────────────────────────────── -->
+    <!-- â”€â”€ Footer â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
     <footer class="footer">
         <div class="footer-grid">
             <div class="footer-brand">
@@ -610,17 +610,17 @@
             </div>
             <div class="footer-col">
                 <h4>Platform</h4>
-                <a href="/index.html">Browse Items</a>
-                <a href="/add-item.html">List an Item</a>
-                <a href="/dashboard.html">Dashboard</a>
-                <a href="/auth.html">Sign In</a>
+                <a href="index.html">Browse Items</a>
+                <a href="add-item.html">List an Item</a>
+                <a href="dashboard.html">Dashboard</a>
+                <a href="auth.html">Sign In</a>
             </div>
             <div class="footer-col">
                 <h4>Categories</h4>
-                <a href="/index.html?cat=cameras">Cameras</a>
-                <a href="/index.html?cat=tools">Power Tools</a>
-                <a href="/index.html?cat=camping">Camping</a>
-                <a href="/index.html?cat=electronics">Electronics</a>
+                <a href="index.html?cat=cameras">Cameras</a>
+                <a href="index.html?cat=tools">Power Tools</a>
+                <a href="index.html?cat=camping">Camping</a>
+                <a href="index.html?cat=electronics">Electronics</a>
             </div>
             <div class="footer-col">
                 <h4>Support</h4>
@@ -631,15 +631,15 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <span>© 2025 RentMyThings. All rights reserved.</span>
-            <span>Made with ❤️ for the sharing economy</span>
+            <span>Â© 2025 RentMyThings. All rights reserved.</span>
+            <span>Made with â¤ï¸ for the sharing economy</span>
         </div>
     </footer>
 
     <!-- Toast container -->
     <div id="toast-container"></div>
 
-    <script src="/js/utils.js"></script>
+    <script src="js/utils.js"></script>
     <script>
         let allItems = [];
         let visibleCount = 8;

@@ -1,6 +1,6 @@
-// ─── RentMyThings – Shared Utilities ───────────────────────────────────────
+﻿// â”€â”€â”€ RentMyThings â€“ Shared Utilities â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 
-// ── Auth Store ──────────────────────────────────────────────────────────────
+// â”€â”€ Auth Store â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const Auth = {
   TOKEN_KEY: 'rmt_token',
   USER_KEY:  'rmt_user',
@@ -34,7 +34,7 @@ const Auth = {
   }
 };
 
-// ── API Client ───────────────────────────────────────────────────────────────
+// â”€â”€ API Client â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const API_BASE = '/api';
 
 const Api = {
@@ -59,9 +59,9 @@ const Api = {
   upload: (path, form)  => Api.request('POST',   path, form, true),
 };
 
-// ── Toast Notifications ──────────────────────────────────────────────────────
+// â”€â”€ Toast Notifications â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function toast(message, type = 'info', duration = 4000) {
-  const icons = { success: '✓', error: '✕', info: 'ℹ', warning: '⚠' };
+  const icons = { success: 'âœ“', error: 'âœ•', info: 'â„¹', warning: 'âš ' };
   const container = document.getElementById('toast-container') || (() => {
     const el = document.createElement('div');
     el.id = 'toast-container';
@@ -78,7 +78,7 @@ function toast(message, type = 'info', duration = 4000) {
   }, duration);
 }
 
-// ── Render Stars ─────────────────────────────────────────────────────────────
+// â”€â”€ Render Stars â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderStars(rating, max = 5) {
   let html = '<div class="stars">';
   for (let i = 1; i <= max; i++) {
@@ -88,9 +88,9 @@ function renderStars(rating, max = 5) {
   return html;
 }
 
-// ── Format Date ───────────────────────────────────────────────────────────────
+// â”€â”€ Format Date â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function formatDate(dateStr) {
-  if (!dateStr) return '—';
+  if (!dateStr) return 'â€”';
   return new Date(dateStr).toLocaleDateString('en-IN', { day: 'numeric', month: 'short', year: 'numeric' });
 }
 
@@ -99,16 +99,16 @@ function daysBetween(start, end) {
   return Math.max(1, Math.round((e - s) / (1000 * 60 * 60 * 24)));
 }
 
-// ── Category Data ─────────────────────────────────────────────────────────────
+// â”€â”€ Category Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const CATEGORIES = [
-  { id: 'cameras',    label: 'Cameras',      emoji: '📸', color: '#e74c3c' },
-  { id: 'tools',      label: 'Power Tools',  emoji: '🔧', color: '#e67e22' },
-  { id: 'camping',    label: 'Camping Gear', emoji: '⛺', color: '#27ae60' },
-  { id: 'electronics',label: 'Electronics',  emoji: '🎮', color: '#3498db' },
-  { id: 'sports',     label: 'Sports',       emoji: '🚴', color: '#9b59b6' },
-  { id: 'music',      label: 'Music',        emoji: '🎸', color: '#1abc9c' },
-  { id: 'vehicles',   label: 'Vehicles',     emoji: '🚗', color: '#f39c12' },
-  { id: 'kitchen',    label: 'Kitchen',      emoji: '🍳', color: '#e91e63' },
+  { id: 'cameras',    label: 'Cameras',      emoji: 'ðŸ“¸', color: '#e74c3c' },
+  { id: 'tools',      label: 'Power Tools',  emoji: 'ðŸ”§', color: '#e67e22' },
+  { id: 'camping',    label: 'Camping Gear', emoji: 'â›º', color: '#27ae60' },
+  { id: 'electronics',label: 'Electronics',  emoji: 'ðŸŽ®', color: '#3498db' },
+  { id: 'sports',     label: 'Sports',       emoji: 'ðŸš´', color: '#9b59b6' },
+  { id: 'music',      label: 'Music',        emoji: 'ðŸŽ¸', color: '#1abc9c' },
+  { id: 'vehicles',   label: 'Vehicles',     emoji: 'ðŸš—', color: '#f39c12' },
+  { id: 'kitchen',    label: 'Kitchen',      emoji: 'ðŸ³', color: '#e91e63' },
 ];
 
 function getCategoryLabel(id) {
@@ -116,7 +116,7 @@ function getCategoryLabel(id) {
   return cat ? cat.label : id;
 }
 
-// ── Mock Data Store (used until backend is connected) ─────────────────────────
+// â”€â”€ Mock Data Store (used until backend is connected) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const MockDB = {
   // Seed users
   _users: JSON.parse(localStorage.getItem('rmt_mock_users') || 'null') || [
@@ -226,7 +226,7 @@ const MockDB = {
   hasReviewed(reviewerId, bookingId) { return this._reviews.some(r => r.reviewer_id === reviewerId && r.booking_id === bookingId); },
 };
 
-// ── Navbar ────────────────────────────────────────────────────────────────────
+// â”€â”€ Navbar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function initNavbar() {
   const navbar   = document.querySelector('.navbar');
   const userPill = document.getElementById('nav-user-pill');
@@ -275,18 +275,18 @@ function initNavbar() {
   });
 }
 
-// ── Page loader ───────────────────────────────────────────────────────────────
+// â”€â”€ Page loader â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function hideLoader() {
   const loader = document.querySelector('.page-loader');
   if (loader) { loader.classList.add('hidden'); setTimeout(() => loader.remove(), 500); }
 }
 
-// ── Item Card HTML ─────────────────────────────────────────────────────────────
+// â”€â”€ Item Card HTML â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 function renderItemCard(item) {
   const owner = MockDB.findUserById(item.owner_id);
   const cat   = CATEGORIES.find(c => c.id === item.category);
   return `
-    <div class="item-card" onclick="window.location.href='/item-detail.html?id=${item._id}'">
+    <div class="item-card" onclick="window.location.href='item-detail.html?id=${item._id}'">
       <div class="item-card-img-wrap">
         <img class="item-card-img" src="${item.image_url || 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'}" alt="${item.title}" loading="lazy"
           onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80'">
@@ -299,7 +299,7 @@ function renderItemCard(item) {
           ${item.location}
         </div>
         <div class="item-card-footer">
-          <div class="item-price">₹${item.price_per_day.toLocaleString()} <span>/day</span></div>
+          <div class="item-price">â‚¹${item.price_per_day.toLocaleString()} <span>/day</span></div>
           <div style="display:flex;align-items:center;gap:6px">
             ${renderStars(Math.round(owner?.rating || 0))}
             <span class="rating-count">${owner?.rating || 'New'}</span>

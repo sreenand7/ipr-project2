@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Item Details – RentMyThings</title>
+    <title>Item Details â€“ RentMyThings</title>
     <meta name="description"
         content="View item details, check availability and send a booking request on RentMyThings." />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <style>
         .item-hero {
             padding: 2rem 2.5rem 0;
@@ -271,7 +271,7 @@
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <a href="/index.html" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <rect width="28" height="28" rx="8" fill="rgba(0,201,167,0.15)" />
                 <path d="M7 14l5 5 9-9" stroke="#00c9a7" stroke-width="2.5" stroke-linecap="round"
@@ -281,24 +281,24 @@
             Rent<span class="logo-dot">My</span>Things
         </a>
         <div class="nav-links">
-            <a href="/index.html">Browse</a>
-            <a href="/add-item.html">List an Item</a>
-            <a href="/dashboard.html">Dashboard</a>
+            <a href="index.html">Browse</a>
+            <a href="add-item.html">List an Item</a>
+            <a href="dashboard.html">Dashboard</a>
         </div>
         <div class="nav-actions">
-            <button class="nav-user-pill hidden" id="nav-user-pill" onclick="window.location.href='/dashboard.html'">
+            <button class="nav-user-pill hidden" id="nav-user-pill" onclick="window.location.href='dashboard.html'">
                 <div class="nav-avatar"><span id="nav-avatar-initial">?</span></div>
                 <span id="nav-user-name">User</span>
             </button>
             <button class="btn btn-ghost btn-sm hidden" id="nav-logout-btn" onclick="Auth.logout()">Logout</button>
-            <a href="/auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">Sign In</a>
+            <a href="auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">Sign In</a>
             <button class="hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
         </div>
     </nav>
     <div class="mobile-menu hidden" id="mobile-menu">
-        <a href="/index.html">Browse</a><a href="/add-item.html">List an Item</a><a href="/dashboard.html">Dashboard</a>
+        <a href="index.html">Browse</a><a href="add-item.html">List an Item</a><a href="dashboard.html">Dashboard</a>
         <div style="height:1px;background:var(--border);margin:.5rem 0"></div>
-        <a href="/auth.html" id="mobile-login">Sign In</a>
+        <a href="auth.html" id="mobile-login">Sign In</a>
         <button class="hidden" id="mobile-logout" onclick="Auth.logout()">Logout</button>
     </div>
 
@@ -306,11 +306,11 @@
     <div class="item-hero">
         <div style="max-width:1200px;margin:0 auto">
             <nav style="font-size:.825rem;color:var(--text-muted);display:flex;align-items:center;gap:.5rem">
-                <a href="/index.html" style="color:var(--text-muted);transition:var(--transition)"
+                <a href="index.html" style="color:var(--text-muted);transition:var(--transition)"
                     onmouseover="this.style.color='var(--primary)'"
                     onmouseout="this.style.color='var(--text-muted)'">Home</a>
-                <span>›</span><span id="breadcrumb-cat" style="color:var(--text-secondary)">Items</span>
-                <span>›</span><span id="breadcrumb-title" style="color:var(--text-primary)">Loading…</span>
+                <span>â€º</span><span id="breadcrumb-cat" style="color:var(--text-secondary)">Items</span>
+                <span>â€º</span><span id="breadcrumb-title" style="color:var(--text-primary)">Loadingâ€¦</span>
             </nav>
         </div>
     </div>
@@ -329,24 +329,24 @@
                     <span class="badge badge-muted" id="item-condition-badge">Condition</span>
                     <span id="item-stars-row"></span>
                 </div>
-                <h1 class="item-info-title" id="item-title">Loading…</h1>
-                <p class="item-desc" id="item-desc">—</p>
+                <h1 class="item-info-title" id="item-title">Loadingâ€¦</h1>
+                <p class="item-desc" id="item-desc">â€”</p>
                 <div class="item-attrs">
                     <div class="item-attr">
                         <div class="item-attr-label">Location</div>
-                        <div class="item-attr-val" id="item-location">—</div>
+                        <div class="item-attr-val" id="item-location">â€”</div>
                     </div>
                     <div class="item-attr">
                         <div class="item-attr-label">Price / Day</div>
-                        <div class="item-attr-val" id="item-ppd">—</div>
+                        <div class="item-attr-val" id="item-ppd">â€”</div>
                     </div>
                     <div class="item-attr">
                         <div class="item-attr-label">Condition</div>
-                        <div class="item-attr-val" id="item-cond">—</div>
+                        <div class="item-attr-val" id="item-cond">â€”</div>
                     </div>
                     <div class="item-attr">
                         <div class="item-attr-label">Category</div>
-                        <div class="item-attr-val" id="item-cat">—</div>
+                        <div class="item-attr-val" id="item-cat">â€”</div>
                     </div>
                 </div>
             </div>
@@ -356,7 +356,7 @@
         <div>
             <div class="booking-card">
                 <div class="booking-price-row">
-                    <span class="booking-price" id="side-price">₹—</span>
+                    <span class="booking-price" id="side-price">â‚¹â€”</span>
                     <sub>per day</sub>
                 </div>
 
@@ -364,8 +364,8 @@
                 <div class="owner-card" id="owner-card">
                     <div class="avatar avatar-md" id="owner-avatar">?</div>
                     <div class="owner-info">
-                        <h4 id="owner-name">—</h4>
-                        <p id="owner-rating">Member since —</p>
+                        <h4 id="owner-name">â€”</h4>
+                        <p id="owner-rating">Member since â€”</p>
                     </div>
                     <svg style="margin-left:auto;color:var(--text-muted)" width="16" height="16" viewBox="0 0 24 24"
                         fill="none" stroke="currentColor" stroke-width="2">
@@ -386,8 +386,8 @@
                 </div>
 
                 <div class="date-summary" id="date-summary" style="display:none">
-                    <span id="days-label">— days × ₹—</span>
-                    <span id="total-price">₹—</span>
+                    <span id="days-label">â€” days Ã— â‚¹â€”</span>
+                    <span id="total-price">â‚¹â€”</span>
                 </div>
 
                 <button class="btn btn-primary w-full btn-lg" id="book-btn" onclick="handleBooking()">
@@ -438,12 +438,12 @@
     <!-- Booking success modal -->
     <div class="modal-backdrop hidden" id="booking-modal">
         <div class="modal" style="text-align:center">
-            <div style="font-size:3.5rem;margin-bottom:1rem">🎉</div>
+            <div style="font-size:3.5rem;margin-bottom:1rem">ðŸŽ‰</div>
             <h3 class="modal-title" style="justify-content:center;margin-bottom:.5rem">Booking Request Sent!</h3>
             <p style="color:var(--text-secondary);font-size:.9rem;margin-bottom:1.5rem">Your request has been sent to
                 the owner. You'll be notified once they respond.</p>
             <div style="display:flex;gap:.75rem;justify-content:center;flex-wrap:wrap">
-                <a href="/dashboard.html" class="btn btn-primary">View My Bookings</a>
+                <a href="dashboard.html" class="btn btn-primary">View My Bookings</a>
                 <button class="btn btn-ghost"
                     onclick="document.getElementById('booking-modal').classList.add('hidden')">Stay Here</button>
             </div>
@@ -451,7 +451,7 @@
     </div>
 
     <div id="toast-container"></div>
-    <script src="/js/utils.js"></script>
+    <script src="js/utils.js"></script>
     <script>
         let currentItem = null;
         let currentOwner = null;
@@ -477,7 +477,7 @@
             // Breadcrumb
             document.getElementById('breadcrumb-cat').textContent = cat?.label || currentItem.category;
             document.getElementById('breadcrumb-title').textContent = currentItem.title;
-            document.title = currentItem.title + ' – RentMyThings';
+            document.title = currentItem.title + ' â€“ RentMyThings';
 
             // Image
             const img = document.getElementById('item-main-img');
@@ -506,12 +506,12 @@
 
             // Attrs
             document.getElementById('item-location').textContent = currentItem.location;
-            document.getElementById('item-ppd').textContent = '₹' + currentItem.price_per_day.toLocaleString();
+            document.getElementById('item-ppd').textContent = 'â‚¹' + currentItem.price_per_day.toLocaleString();
             document.getElementById('item-cond').textContent = currentItem.condition;
             document.getElementById('item-cat').textContent = cat?.label || currentItem.category;
 
             // Sidebar price
-            document.getElementById('side-price').textContent = '₹' + currentItem.price_per_day.toLocaleString();
+            document.getElementById('side-price').textContent = 'â‚¹' + currentItem.price_per_day.toLocaleString();
 
             // Owner card
             if (currentOwner) {
@@ -540,8 +540,8 @@
             const days = daysBetween(s, e);
             if (days <= 0) { toast('End date must be after start date', 'warning'); summary.style.display = 'none'; return; }
             const total = days * currentItem.price_per_day;
-            document.getElementById('days-label').textContent = `${days} day${days > 1 ? 's' : ''} × ₹${currentItem.price_per_day.toLocaleString()}`;
-            document.getElementById('total-price').textContent = '₹' + total.toLocaleString();
+            document.getElementById('days-label').textContent = `${days} day${days > 1 ? 's' : ''} Ã— â‚¹${currentItem.price_per_day.toLocaleString()}`;
+            document.getElementById('total-price').textContent = 'â‚¹' + total.toLocaleString();
             summary.style.display = 'flex';
         }
 

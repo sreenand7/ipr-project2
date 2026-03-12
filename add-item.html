@@ -1,13 +1,13 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>List an Item – RentMyThings</title>
+    <title>List an Item â€“ RentMyThings</title>
     <meta name="description"
         content="List your item for rent on RentMyThings and start earning money from things you rarely use." />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <style>
         .add-layout {
             display: grid;
@@ -168,7 +168,7 @@
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <a href="/index.html" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <rect width="28" height="28" rx="8" fill="rgba(0,201,167,0.15)" />
                 <path d="M7 14l5 5 9-9" stroke="#00c9a7" stroke-width="2.5" stroke-linecap="round"
@@ -178,24 +178,24 @@
             Rent<span class="logo-dot">My</span>Things
         </a>
         <div class="nav-links">
-            <a href="/index.html">Browse</a>
-            <a href="/add-item.html" class="active">List an Item</a>
-            <a href="/dashboard.html">Dashboard</a>
+            <a href="index.html">Browse</a>
+            <a href="add-item.html" class="active">List an Item</a>
+            <a href="dashboard.html">Dashboard</a>
         </div>
         <div class="nav-actions">
-            <button class="nav-user-pill hidden" id="nav-user-pill" onclick="window.location.href='/dashboard.html'">
+            <button class="nav-user-pill hidden" id="nav-user-pill" onclick="window.location.href='dashboard.html'">
                 <div class="nav-avatar"><span id="nav-avatar-initial">?</span></div>
                 <span id="nav-user-name">User</span>
             </button>
             <button class="btn btn-ghost btn-sm hidden" id="nav-logout-btn" onclick="Auth.logout()">Logout</button>
-            <a href="/auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">Sign In</a>
+            <a href="auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">Sign In</a>
             <button class="hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
         </div>
     </nav>
     <div class="mobile-menu hidden" id="mobile-menu">
-        <a href="/index.html">Browse</a><a href="/add-item.html">List an Item</a><a href="/dashboard.html">Dashboard</a>
+        <a href="index.html">Browse</a><a href="add-item.html">List an Item</a><a href="dashboard.html">Dashboard</a>
         <div style="height:1px;background:var(--border);margin:.5rem 0"></div>
-        <a href="/auth.html" id="mobile-login">Sign In</a>
+        <a href="auth.html" id="mobile-login">Sign In</a>
         <button class="hidden" id="mobile-logout" onclick="Auth.logout()">Logout</button>
     </div>
 
@@ -233,7 +233,7 @@
                     <div class="form-group">
                         <label class="form-label">Description *</label>
                         <textarea class="form-textarea" id="f-desc"
-                            placeholder="Describe your item in detail — condition, included accessories, any restrictions on use…"
+                            placeholder="Describe your item in detail â€” condition, included accessories, any restrictions on useâ€¦"
                             required maxlength="500"
                             oninput="document.getElementById('desc-count').textContent = this.value.length + '/500'"
                             style="min-height:130px"></textarea>
@@ -243,24 +243,24 @@
                         <div class="form-group">
                             <label class="form-label">Category *</label>
                             <select class="form-select" id="f-category" required>
-                                <option value="">Choose category…</option>
-                                <option value="cameras">📸 Cameras</option>
-                                <option value="tools">🔧 Power Tools</option>
-                                <option value="camping">⛺ Camping Gear</option>
-                                <option value="electronics">🎮 Electronics</option>
-                                <option value="sports">🚴 Sports</option>
-                                <option value="music">🎸 Music</option>
-                                <option value="vehicles">🚗 Vehicles</option>
-                                <option value="kitchen">🍳 Kitchen</option>
+                                <option value="">Choose categoryâ€¦</option>
+                                <option value="cameras">ðŸ“¸ Cameras</option>
+                                <option value="tools">ðŸ”§ Power Tools</option>
+                                <option value="camping">â›º Camping Gear</option>
+                                <option value="electronics">ðŸŽ® Electronics</option>
+                                <option value="sports">ðŸš´ Sports</option>
+                                <option value="music">ðŸŽ¸ Music</option>
+                                <option value="vehicles">ðŸš— Vehicles</option>
+                                <option value="kitchen">ðŸ³ Kitchen</option>
                             </select>
                         </div>
                         <div class="form-group">
                             <label class="form-label">Condition *</label>
                             <select class="form-select" id="f-condition" required>
-                                <option value="">Select condition…</option>
-                                <option value="Excellent">🌟 Excellent – Like new</option>
-                                <option value="Good">👍 Good – Minor wear</option>
-                                <option value="Fair">⚠️ Fair – Visible wear but functional</option>
+                                <option value="">Select conditionâ€¦</option>
+                                <option value="Excellent">ðŸŒŸ Excellent â€“ Like new</option>
+                                <option value="Good">ðŸ‘ Good â€“ Minor wear</option>
+                                <option value="Fair">âš ï¸ Fair â€“ Visible wear but functional</option>
                             </select>
                         </div>
                     </div>
@@ -278,7 +278,7 @@
                 <div style="display:flex;flex-direction:column;gap:1.25rem;margin-bottom:2rem">
                     <div class="form-row">
                         <div class="form-group">
-                            <label class="form-label">Rental Price per Day (₹) *</label>
+                            <label class="form-label">Rental Price per Day (â‚¹) *</label>
                             <input type="number" class="form-input" id="f-price" placeholder="e.g. 500" min="1"
                                 required />
                             <span class="form-hint">Set a competitive daily rate. You can always change it later.</span>
@@ -304,7 +304,7 @@
                 <div class="upload-zone" id="upload-zone" onclick="document.getElementById('f-image').click()"
                     ondragover="e=>{e.preventDefault();this.classList.add('dragover')}"
                     ondragleave="this.classList.remove('dragover')" ondrop="handleDrop(event)">
-                    <div class="upload-zone-icon">📷</div>
+                    <div class="upload-zone-icon">ðŸ“·</div>
                     <p><strong>Click to upload</strong> or drag and drop</p>
                     <span>PNG, JPG, WEBP up to 5MB</span>
                 </div>
@@ -316,7 +316,7 @@
                 <div style="margin-top:1rem">
                     <div class="form-group">
                         <label class="form-label">Or paste an image URL</label>
-                        <input type="url" class="form-input" id="f-image-url" placeholder="https://…"
+                        <input type="url" class="form-input" id="f-image-url" placeholder="https://â€¦"
                             oninput="previewFromUrl(this.value)" />
                     </div>
                 </div>
@@ -330,7 +330,7 @@
                         </svg>
                         Publish Listing
                     </button>
-                    <a href="/index.html" class="btn btn-ghost">Cancel</a>
+                    <a href="index.html" class="btn btn-ghost">Cancel</a>
                 </div>
             </form>
         </div>
@@ -338,11 +338,11 @@
         <!-- Tips sidebar -->
         <div class="tips-card">
             <h3 style="font-family:'Outfit',sans-serif;font-size:1.1rem;font-weight:800;margin-bottom:1rem">
-                💡 Tips for Great Listings
+                ðŸ’¡ Tips for Great Listings
             </h3>
             <div class="tip-item">
                 <div class="tip-num">1</div>
-                <div class="tip-text"><strong>Add a clear photo</strong><span>Items with high-quality photos get 3× more
+                <div class="tip-text"><strong>Add a clear photo</strong><span>Items with high-quality photos get 3Ã— more
                         bookings.</span></div>
             </div>
             <div class="tip-item">
@@ -352,12 +352,12 @@
             </div>
             <div class="tip-item">
                 <div class="tip-num">3</div>
-                <div class="tip-text"><strong>Price competitively</strong><span>Aim for 3–5% of the item's market value
+                <div class="tip-text"><strong>Price competitively</strong><span>Aim for 3â€“5% of the item's market value
                         per day.</span></div>
             </div>
             <div class="tip-item">
                 <div class="tip-num">4</div>
-                <div class="tip-text"><strong>Keep location accurate</strong><span>Renters search by city — be specific
+                <div class="tip-text"><strong>Keep location accurate</strong><span>Renters search by city â€” be specific
                         about your area.</span></div>
             </div>
             <div class="tip-item">
@@ -369,14 +369,14 @@
             <div class="divider"></div>
             <div
                 style="background:var(--primary-glow);border:1px solid rgba(0,201,167,.2);border-radius:var(--radius-md);padding:1rem;font-size:.8rem;color:var(--text-secondary)">
-                <strong style="color:var(--primary);display:block;margin-bottom:.35rem">💰 Earning Potential</strong>
-                A camera rented 3 days/month at ₹800/day earns ₹28,800/year!
+                <strong style="color:var(--primary);display:block;margin-bottom:.35rem">ðŸ’° Earning Potential</strong>
+                A camera rented 3 days/month at â‚¹800/day earns â‚¹28,800/year!
             </div>
         </div>
     </div>
 
     <div id="toast-container"></div>
-    <script src="/js/utils.js"></script>
+    <script src="js/utils.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', () => {
             initNavbar();
@@ -439,7 +439,7 @@
             }
 
             const btn = document.getElementById('submit-btn');
-            btn.disabled = true; btn.textContent = 'Publishing…';
+            btn.disabled = true; btn.textContent = 'Publishingâ€¦';
 
             const user = Auth.getUser();
             setTimeout(() => {
@@ -449,7 +449,7 @@
                     price_per_day: price, location,
                     image_url: previewVisible ? document.getElementById('preview-img').src : (imgUrl || 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80')
                 });
-                toast('Your listing is live! 🎉', 'success');
+                toast('Your listing is live! ðŸŽ‰', 'success');
                 setTimeout(() => { window.location.href = '/dashboard.html'; }, 1000);
             }, 700);
         }

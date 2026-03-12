@@ -1,12 +1,12 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <title>Dashboard – RentMyThings</title>
+    <title>Dashboard â€“ RentMyThings</title>
     <meta name="description" content="Manage your listings, bookings, and profile on RentMyThings." />
-    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <style>
         .dash-layout {
             max-width: 1200px;
@@ -312,7 +312,7 @@
 
     <!-- Navbar -->
     <nav class="navbar" id="navbar">
-        <a href="/index.html" class="nav-logo">
+        <a href="index.html" class="nav-logo">
             <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
                 <rect width="28" height="28" rx="8" fill="rgba(0,201,167,0.15)" />
                 <path d="M7 14l5 5 9-9" stroke="#00c9a7" stroke-width="2.5" stroke-linecap="round"
@@ -322,9 +322,9 @@
             Rent<span class="logo-dot">My</span>Things
         </a>
         <div class="nav-links">
-            <a href="/index.html">Browse</a>
-            <a href="/add-item.html">List an Item</a>
-            <a href="/dashboard.html" class="active">Dashboard</a>
+            <a href="index.html">Browse</a>
+            <a href="add-item.html">List an Item</a>
+            <a href="dashboard.html" class="active">Dashboard</a>
         </div>
         <div class="nav-actions">
             <button class="nav-user-pill hidden" id="nav-user-pill">
@@ -332,14 +332,14 @@
                 <span id="nav-user-name">User</span>
             </button>
             <button class="btn btn-ghost btn-sm hidden" id="nav-logout-btn" onclick="Auth.logout()">Logout</button>
-            <a href="/auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">Sign In</a>
+            <a href="auth.html" class="btn btn-primary btn-sm" id="nav-login-btn">Sign In</a>
             <button class="hamburger" id="nav-hamburger"><span></span><span></span><span></span></button>
         </div>
     </nav>
     <div class="mobile-menu hidden" id="mobile-menu">
-        <a href="/index.html">Browse</a><a href="/add-item.html">List an Item</a><a href="/dashboard.html">Dashboard</a>
+        <a href="index.html">Browse</a><a href="add-item.html">List an Item</a><a href="dashboard.html">Dashboard</a>
         <div style="height:1px;background:var(--border);margin:.5rem 0"></div>
-        <a href="/auth.html" id="mobile-login">Sign In</a>
+        <a href="auth.html" id="mobile-login">Sign In</a>
         <button class="hidden" id="mobile-logout" onclick="Auth.logout()">Logout</button>
     </div>
 
@@ -348,14 +348,14 @@
         <div class="dash-header">
             <div class="dash-avatar" id="dash-avatar">?</div>
             <div class="dash-user-info">
-                <h1 id="dash-name">Loading…</h1>
-                <p id="dash-email">—</p>
+                <h1 id="dash-name">Loadingâ€¦</h1>
+                <p id="dash-email">â€”</p>
                 <div style="display:flex;align-items:center;gap:.75rem;margin-top:.4rem">
                     <span id="dash-rating-stars"></span>
                     <span id="dash-reviews-count" style="font-size:.8rem;color:var(--text-muted)"></span>
                 </div>
             </div>
-            <a href="/add-item.html" class="btn btn-primary" style="margin-left:auto">
+            <a href="add-item.html" class="btn btn-primary" style="margin-left:auto">
                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                     <line x1="12" y1="5" x2="12" y2="19" />
                     <line x1="5" y1="12" x2="19" y2="12" />
@@ -379,21 +379,21 @@
                 <div class="stat-label">Requests In</div>
             </div>
             <div class="stat-card">
-                <div class="stat-num" id="stat-rating">—</div>
+                <div class="stat-num" id="stat-rating">â€”</div>
                 <div class="stat-label">Avg Rating</div>
             </div>
         </div>
 
         <!-- Tabs -->
         <div class="dash-tabs">
-            <button class="dash-tab active" onclick="switchDashTab('profile')">👤 Profile</button>
-            <button class="dash-tab" onclick="switchDashTab('listings')">📦 My Listings</button>
-            <button class="dash-tab" onclick="switchDashTab('bookings')">🗓 My Bookings</button>
-            <button class="dash-tab" onclick="switchDashTab('requests')">📨 Requests</button>
-            <button class="dash-tab" onclick="switchDashTab('reviews')">⭐ Reviews</button>
+            <button class="dash-tab active" onclick="switchDashTab('profile')">ðŸ‘¤ Profile</button>
+            <button class="dash-tab" onclick="switchDashTab('listings')">ðŸ“¦ My Listings</button>
+            <button class="dash-tab" onclick="switchDashTab('bookings')">ðŸ—“ My Bookings</button>
+            <button class="dash-tab" onclick="switchDashTab('requests')">ðŸ“¨ Requests</button>
+            <button class="dash-tab" onclick="switchDashTab('reviews')">â­ Reviews</button>
         </div>
 
-        <!-- ── Tab: Profile ─────────────────────────────────────── -->
+        <!-- â”€â”€ Tab: Profile â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
         <div id="tab-profile" class="tab-pane">
             <div class="card p-4">
                 <div class="profile-photo-area">
@@ -435,19 +435,19 @@
             </div>
         </div>
 
-        <!-- ── Tab: My Listings ──────────────────────────────────── -->
+        <!-- â”€â”€ Tab: My Listings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
         <div id="tab-listings" class="tab-pane" style="display:none">
             <div
                 style="display:flex;align-items:center;justify-content:space-between;margin-bottom:1.25rem;flex-wrap:wrap;gap:1rem">
                 <h2 style="font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:800">My Listings</h2>
-                <a href="/add-item.html" class="btn btn-primary btn-sm">+ Add New</a>
+                <a href="add-item.html" class="btn btn-primary btn-sm">+ Add New</a>
             </div>
             <div class="card" style="padding:0;overflow:hidden">
                 <div id="listings-list"></div>
             </div>
         </div>
 
-        <!-- ── Tab: My Bookings ──────────────────────────────────── -->
+        <!-- â”€â”€ Tab: My Bookings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
         <div id="tab-bookings" class="tab-pane" style="display:none">
             <h2 style="font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:1.25rem">Items I'm
                 Renting</h2>
@@ -456,7 +456,7 @@
             </div>
         </div>
 
-        <!-- ── Tab: Requests ─────────────────────────────────────── -->
+        <!-- â”€â”€ Tab: Requests â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
         <div id="tab-requests" class="tab-pane" style="display:none">
             <h2 style="font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:1.25rem">Incoming
                 Booking Requests</h2>
@@ -465,7 +465,7 @@
             </div>
         </div>
 
-        <!-- ── Tab: Reviews ──────────────────────────────────────── -->
+        <!-- â”€â”€ Tab: Reviews â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ -->
         <div id="tab-reviews" class="tab-pane" style="display:none">
             <h2 style="font-family:'Outfit',sans-serif;font-size:1.2rem;font-weight:800;margin-bottom:1.25rem">Reviews
                 About Me</h2>
@@ -480,23 +480,23 @@
         <div class="modal">
             <div class="modal-header">
                 <h3 class="modal-title">Leave a Review</h3>
-                <button class="modal-close" onclick="closeReviewModal()">✕</button>
+                <button class="modal-close" onclick="closeReviewModal()">âœ•</button>
             </div>
             <p style="font-size:.875rem;color:var(--text-secondary);margin-bottom:1.25rem">Rate your experience with
                 <strong id="review-target-name">this user</strong>.</p>
             <div style="margin-bottom:1.25rem">
                 <label class="form-label">Your Rating</label>
                 <div class="star-rate" id="star-rate">
-                    <input type="radio" id="s5" name="rating" value="5" /><label for="s5">★</label>
-                    <input type="radio" id="s4" name="rating" value="4" /><label for="s4">★</label>
-                    <input type="radio" id="s3" name="rating" value="3" /><label for="s3">★</label>
-                    <input type="radio" id="s2" name="rating" value="2" /><label for="s2">★</label>
-                    <input type="radio" id="s1" name="rating" value="1" /><label for="s1">★</label>
+                    <input type="radio" id="s5" name="rating" value="5" /><label for="s5">â˜…</label>
+                    <input type="radio" id="s4" name="rating" value="4" /><label for="s4">â˜…</label>
+                    <input type="radio" id="s3" name="rating" value="3" /><label for="s3">â˜…</label>
+                    <input type="radio" id="s2" name="rating" value="2" /><label for="s2">â˜…</label>
+                    <input type="radio" id="s1" name="rating" value="1" /><label for="s1">â˜…</label>
                 </div>
             </div>
             <div class="form-group" style="margin-bottom:1.5rem">
                 <label class="form-label">Your Comment (optional)</label>
-                <textarea class="form-textarea" id="review-comment" placeholder="Describe your experience…"
+                <textarea class="form-textarea" id="review-comment" placeholder="Describe your experienceâ€¦"
                     style="min-height:90px"></textarea>
             </div>
             <div style="display:flex;gap:.75rem;justify-content:flex-end">
@@ -511,13 +511,13 @@
         <div class="modal" style="max-width:540px">
             <div class="modal-header">
                 <h3 class="modal-title">Edit Listing</h3>
-                <button class="modal-close" onclick="closeEditModal()">✕</button>
+                <button class="modal-close" onclick="closeEditModal()">âœ•</button>
             </div>
             <form onsubmit="saveEditItem(event)" style="display:flex;flex-direction:column;gap:1rem">
                 <input type="hidden" id="edit-item-id" />
                 <div class="form-group"><label class="form-label">Title</label><input type="text" class="form-input"
                         id="edit-title" /></div>
-                <div class="form-group"><label class="form-label">Price per Day (₹)</label><input type="number"
+                <div class="form-group"><label class="form-label">Price per Day (â‚¹)</label><input type="number"
                         class="form-input" id="edit-price" min="1" /></div>
                 <div class="form-group"><label class="form-label">Location</label><input type="text" class="form-input"
                         id="edit-location" /></div>
@@ -537,7 +537,7 @@
     </div>
 
     <div id="toast-container"></div>
-    <script src="/js/utils.js"></script>
+    <script src="js/utils.js"></script>
     <script>
         let currentUser = null;
         let reviewTarget = null; // { bookingId, userId, name }
@@ -568,7 +568,7 @@
             document.getElementById('dash-rating-stars').innerHTML = renderStars(Math.round(rating));
             const myReviews = MockDB.getReviewsForUser(currentUser._id);
             document.getElementById('dash-reviews-count').textContent = myReviews.length + ' review' + (myReviews.length !== 1 ? 's' : '');
-            document.getElementById('stat-rating').textContent = rating || '—';
+            document.getElementById('stat-rating').textContent = rating || 'â€”';
 
             // Stats
             const myItems = MockDB.getItems({ owner_id: currentUser._id });
@@ -591,17 +591,17 @@
             event.target.classList.add('active');
         }
 
-        // ── Listings ────────────────────────────────────────
+        // â”€â”€ Listings â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function renderListings(items) {
             const el = document.getElementById('listings-list');
-            if (!items.length) { el.innerHTML = emptyState('📦', 'No listings yet', 'Start earning by listing items you rarely use.'); return; }
+            if (!items.length) { el.innerHTML = emptyState('ðŸ“¦', 'No listings yet', 'Start earning by listing items you rarely use.'); return; }
             el.innerHTML = items.map(item => {
                 const cat = CATEGORIES.find(c => c.id === item.category);
                 return `<div class="my-item-row">
           <img class="my-item-img" src="${item.image_url || ''}" alt="${item.title}" onerror="this.src='https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=200&q=60'"/>
           <div class="my-item-info">
             <div class="my-item-title">${item.title}</div>
-            <div class="my-item-meta">${cat?.emoji || ''} ${cat?.label || item.category} &bull; ₹${item.price_per_day.toLocaleString()}/day &bull; ${item.location}</div>
+            <div class="my-item-meta">${cat?.emoji || ''} ${cat?.label || item.category} &bull; â‚¹${item.price_per_day.toLocaleString()}/day &bull; ${item.location}</div>
           </div>
           <div class="my-item-actions">
             <button class="btn btn-ghost btn-sm" onclick="openEditModal('${item._id}')">
@@ -612,7 +612,7 @@
               <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"/><path d="M10 11v6"/><path d="M14 11v6"/></svg>
               Delete
             </button>
-            <a href="/item-detail.html?id=${item._id}" class="btn btn-ghost btn-sm">View</a>
+            <a href="item-detail.html?id=${item._id}" class="btn btn-ghost btn-sm">View</a>
           </div>
         </div>`;
             }).join('');
@@ -650,29 +650,29 @@
             loadDashboard();
         }
 
-        // ── My Bookings (as renter) ─────────────────────────
+        // â”€â”€ My Bookings (as renter) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function renderMyBookings(bookings) {
             const el = document.getElementById('bookings-list');
-            if (!bookings.length) { el.innerHTML = emptyState('🗓', 'No bookings yet', 'Browse items and send your first booking request.'); return; }
+            if (!bookings.length) { el.innerHTML = emptyState('ðŸ—“', 'No bookings yet', 'Browse items and send your first booking request.'); return; }
             el.innerHTML = bookings.map(b => {
                 const item = MockDB.getItemById(b.item_id);
                 const owner = item ? MockDB.findUserById(item.owner_id) : null;
                 const canReview = b.booking_status === 'completed' && owner && !MockDB.hasReviewed(currentUser._id, b._id);
                 return `<div class="booking-row">
           <div class="booking-row-header">
-            <span class="booking-item-name" onclick="window.location.href='/item-detail.html?id=${b.item_id}'">${item?.title || 'Unknown item'}</span>
+            <span class="booking-item-name" onclick="window.location.href='item-detail.html?id=${b.item_id}'">${item?.title || 'Unknown item'}</span>
             <span class="status-pill status-${b.booking_status}">${b.booking_status}</span>
           </div>
           <div class="booking-dates">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
-            ${formatDate(b.start_date)} → ${formatDate(b.end_date)}
-            <span style="color:var(--text-muted)">•</span>
-            Owner: <strong>${owner?.name || '—'}</strong>
+            ${formatDate(b.start_date)} â†’ ${formatDate(b.end_date)}
+            <span style="color:var(--text-muted)">â€¢</span>
+            Owner: <strong>${owner?.name || 'â€”'}</strong>
           </div>
           ${canReview ? `
           <div class="booking-actions">
             <button class="btn btn-outline btn-sm" onclick="openReviewModal('${b._id}','${owner._id}','${owner.name}')">
-              ⭐ Leave Review
+              â­ Leave Review
             </button>
           </div>` : ''}
           ${b.booking_status === 'approved' ? `
@@ -689,11 +689,11 @@
             loadDashboard();
         }
 
-        // ── Requests (as owner) ─────────────────────────────
+        // â”€â”€ Requests (as owner) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function renderRequests() {
             const el = document.getElementById('requests-list');
             const requests = MockDB.getBookingsAsOwner(currentUser._id);
-            if (!requests.length) { el.innerHTML = emptyState('📨', 'No requests yet', 'Once renters book your items, requests will appear here.'); return; }
+            if (!requests.length) { el.innerHTML = emptyState('ðŸ“¨', 'No requests yet', 'Once renters book your items, requests will appear here.'); return; }
 
             el.innerHTML = requests.map(b => {
                 const item = MockDB.getItemById(b.item_id);
@@ -702,24 +702,24 @@
                 const total = days * (item?.price_per_day || 0);
                 return `<div class="booking-row">
           <div class="booking-row-header">
-            <span class="booking-item-name">${item?.title || '—'}</span>
+            <span class="booking-item-name">${item?.title || 'â€”'}</span>
             <span class="status-pill status-${b.booking_status}">${b.booking_status}</span>
           </div>
           <div class="booking-dates">
             <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
-            Renter: <strong>${renter?.name || '—'}</strong>
-            <span style="color:var(--text-muted)">•</span>
-            ${formatDate(b.start_date)} → ${formatDate(b.end_date)}
-            <span style="color:var(--text-muted)">•</span>
-            <span style="color:var(--secondary);font-weight:700">₹${total.toLocaleString()}</span>
+            Renter: <strong>${renter?.name || 'â€”'}</strong>
+            <span style="color:var(--text-muted)">â€¢</span>
+            ${formatDate(b.start_date)} â†’ ${formatDate(b.end_date)}
+            <span style="color:var(--text-muted)">â€¢</span>
+            <span style="color:var(--secondary);font-weight:700">â‚¹${total.toLocaleString()}</span>
           </div>
           ${b.booking_status === 'pending' ? `
           <div class="booking-actions">
             <button class="btn btn-sm" style="background:rgba(34,197,94,.15);color:var(--success);border:1px solid rgba(34,197,94,.3)" onclick="updateRequest('${b._id}','approved')">
-              ✓ Approve
+              âœ“ Approve
             </button>
             <button class="btn btn-danger btn-sm" onclick="updateRequest('${b._id}','rejected')">
-              ✕ Reject
+              âœ• Reject
             </button>
           </div>` : ''}
         </div>`;
@@ -728,14 +728,14 @@
 
         function updateRequest(id, status) {
             MockDB.updateBookingStatus(id, status);
-            toast(status === 'approved' ? 'Booking approved! 🎉' : 'Booking rejected.', status === 'approved' ? 'success' : 'info');
+            toast(status === 'approved' ? 'Booking approved! ðŸŽ‰' : 'Booking rejected.', status === 'approved' ? 'success' : 'info');
             loadDashboard();
         }
 
-        // ── Reviews ─────────────────────────────────────────
+        // â”€â”€ Reviews â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function renderReviews(reviews) {
             const el = document.getElementById('reviews-list');
-            if (!reviews.length) { el.innerHTML = emptyState('⭐', 'No reviews yet', 'Reviews you receive will appear here.'); return; }
+            if (!reviews.length) { el.innerHTML = emptyState('â­', 'No reviews yet', 'Reviews you receive will appear here.'); return; }
             el.innerHTML = reviews.map(r => {
                 const reviewer = MockDB.findUserById(r.reviewer_id);
                 return `<div class="booking-row">
@@ -754,7 +754,7 @@
             }).join('');
         }
 
-        // ── Review Modal ─────────────────────────────────────
+        // â”€â”€ Review Modal â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function openReviewModal(bookingId, userId, name) {
             reviewTarget = { bookingId, userId, name };
             document.getElementById('review-target-name').textContent = name;
@@ -775,11 +775,11 @@
                 rating, comment
             });
             closeReviewModal();
-            toast('Review submitted! Thank you 🌟', 'success');
+            toast('Review submitted! Thank you ðŸŒŸ', 'success');
             loadDashboard();
         }
 
-        // ── Profile ──────────────────────────────────────────
+        // â”€â”€ Profile â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function saveProfile(e) {
             e.preventDefault();
             const name = document.getElementById('p-name').value.trim();
@@ -791,7 +791,7 @@
             loadDashboard();
         }
 
-        // ── Utility ─────────────────────────────────────────
+        // â”€â”€ Utility â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
         function emptyState(emoji, title, sub) {
             return `<div class="empty-state"><div style="font-size:2.5rem">${emoji}</div><h3>${title}</h3><p>${sub}</p></div>`;
         }
